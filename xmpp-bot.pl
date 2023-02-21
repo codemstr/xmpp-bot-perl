@@ -11,7 +11,6 @@ use AnyEvent::XMPP::Ext::MUC;
 my $vcard = AnyEvent::XMPP::Ext::VCard->new;
 
 use WWW::Wikipedia;
-use WWW::Wikipedia;
 
 my $xmpp_message;
 my $nickname = 'pi4' . $$;
@@ -24,7 +23,7 @@ my $password = '';
 #my %quotes  = $q->fetch("nasdaq", @stocks);
 my $wiki = WWW::Wikipedia->new();
 
-my $uname = 'pi@ip6.d-n-s.name';    # or be jabber, don't forget to change $ser>
+my $uname = 'pi@ip6.d-n-s.name';    # or be jabber, don't forget to change $server to jabber.org
 my $passwd = '';
 my $server = 'ip6.d-n-s.name';
 
@@ -197,7 +196,7 @@ sub sentm {
     if($msg=~/([Oo]kay)|([oO]k)/) {
         return $reply = "That's $msg $u";
     }
-    if ($msg =~ /([Bb]itch)|([Ff]uck)|([Sh]it)|([Cc]unt)|([Ff]ag)|([Ss]lut)|([A>
+    if ($msg =~ /([Bb]itch)|([Ff]uck)|([Sh]it)|([Cc]unt)|([Ff]ag)|([Ss]lut)|([Aa]ss)|([Bb]astard)|([Nn]igg[a|ER])|([Jj]ew)/) {
         return $reply = "$u, what the $msg is your problem?";
     }
     else {
