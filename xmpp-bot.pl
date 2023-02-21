@@ -16,7 +16,7 @@ use WWW::Wikipedia;
 my $xmpp_message;
 my $nickname = 'pi4' . $$;
 my $server   = 'ip6.d-n-s.name';
-my $password = 'fuckyourgirlfriend';
+my $password = '';
 
 #use Finance::Quote;
 #my $q = Finance::Quote->new;
@@ -25,7 +25,7 @@ my $password = 'fuckyourgirlfriend';
 my $wiki = WWW::Wikipedia->new();
 
 my $uname = 'pi@ip6.d-n-s.name';    # or be jabber, don't forget to change $ser>
-my $passwd = 'pi4';
+my $passwd = '';
 my $server = 'ip6.d-n-s.name';
 
 
